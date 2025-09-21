@@ -59,7 +59,7 @@ The full code is available here: [Full SQL script](sql_closing_stock_analysis.sq
 2. menmed
  - THIS CTE calculates the mean using AVG(), the median by calculating the 50th percentile using PERCENTILE_CONT, and the standard deviation using STDDEV_SAMP of each company. These figures are all rounded to 5 places after the decimal. 
 3. trimm
- - This CTE uses a subquery and CUME_DIST to trim the top and bottom 1% of the closing stock returns for each company, leaving a range of values from the 1st to the 99th percentile. This figure is rounded to 5 places after the decimal.
+ - This CTE uses a subquery and CUME_DIST to trim the top and bottom 1% of the closing stock returns for each company, leaving a range of values from the 1st to the 99th percentile. This figure is rounded to 5 places after the decimal. Often people choose to trim the top and bottom 5% instead of 1%. To do this, simply replace 0.001 with 0.05 and 0.99 with 0.95.
 4.  mean_madcow
  - This CTE calculates the absolute deviation about the mean by using AVG(), ABS(), the returns, and the mean calculated in menmed. This figure is rounded to 5 places after the decimal.
 5. median_madcow
