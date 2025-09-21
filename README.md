@@ -9,7 +9,7 @@ Advanced PostgreSQL query using CTE's, window functions, and aggregate statistic
 - [Usage](usage)
 - [Requirements](#Requirements)
 - [SQL  Queries](#SQL-Queries)
-- [Results](#Results)
+- [Sample Results](#Sample-Results)
 
 ## Overview
 This project calculates the returns from the closing stock price, and using these values uses aggregate functions and window functions to calculates the mean, trimmed mean, median, Absolute Deviation about the Mean, the Absolute Deviation about the Median, and the Standard Deviation. This project exists as a personal project to further understand statistical analysis.
@@ -61,5 +61,5 @@ This project was created (and thus uses and functions) using standard PostgreSQL
 5. median_madcow
  - This CTE calculates the absolute deviation about the median by using PERCENTILE_CONT(), ABS(), the returns, and the median calculated in menmed. This figure is rounded to 5 places after the decimal.
 
-## Results
+## Sample Results
 ![Sample Results](sample_results.png)
