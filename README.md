@@ -48,7 +48,7 @@ CREATE_TABLE stocks_data (
 3. Obtain the outputs
 
 ## Requirements
-This project was created (and thus uses and functions) using standard PostgreSQL with all features available in versions of POSTGRESQL 13 or later. Furhtermore, **psql** or a GUI such as **PGAdmin** is needed to run queries. Finally, a table named `stocks_data` with the provided schema is necessary.
+This project was created (and thus uses and functions) using standard PostgreSQL with all features available in versions of POSTGRESQL 13 or later. Furthermore, **psql** or a GUI such as **PGAdmin** is needed to run queries. Finally, a table named `stocks_data` with the provided schema is necessary.
 
 ## SQL Queries
 The full code is available here: [Full SQL script](sql_closing_stock_analysis.sql)
