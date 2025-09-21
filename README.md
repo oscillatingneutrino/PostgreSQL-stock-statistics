@@ -23,14 +23,14 @@ This project uses data from a csv file containing the following 9 columns. Of th
 - Snippet: 2023-11-29,	190.8999939,	192.0899963,	189.8699951,	189.8849945,	16472085,	0,	0,	AAPL
 
 ## Features
--Computes the mean, trimmed mean, median, and stamdard deviation per company
--Computes the mean absolute deviation and the median absolute deviation.
+- Computes the mean, trimmed mean, median, and standard deviation per company
+- Computes the mean absolute deviation and the median absolute deviation.
 
 ## Table Schema
 If you import the sample CSV using COPY stocks_data FROM '.../csv' I recommend using the following table schema. Note that because of PostgreSQL's specificity about case sensitivity with column names (and for the sake of convenience), keep the names of the columns lowercase. This only applies during data import
 
 ```sql
-CREATE_TABLE stocks_data (
+CREATE TABLE stocks_data (
   date date,
   open numeric,
   high numeric,
@@ -69,4 +69,4 @@ The full code is available here: [Full SQL script](sql_closing_stock_analysis.sq
 ![Sample Results](sample_results.png)
 
 ## Acknowledgments
-I would first and foremost like to thank [Kaggle] for hosting the dataset that made this project possible.
+I would first and foremost like to thank [Kaggle](https://www.kaggle.com/) for hosting the dataset that made this project possible.
