@@ -62,4 +62,4 @@ This project was created (and thus uses and functions) using standard PostgreSQL
  - This CTE calculates the absolute deviation about the median by using PERCENTILE_CONT(), ABS(), the returns, and the median calculated in menmed. This figure is rounded to 5 places after the decimal.
 
 ## Results
-
+![Sample Results](sample_result.png)
