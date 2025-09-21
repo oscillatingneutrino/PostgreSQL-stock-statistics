@@ -48,7 +48,7 @@ CREATE_TABLE stocks_data (
 This project was created (and thus uses and functions) using standard PostgreSQL with all features available in versions of POSTGRESQL 13 or later. Furhtermore, **psql** or a GUI such as **PGAdmin** is needed to run queries. Finally, a table named `stocks_data` with the provided schema is necessary.
 
 ## SQL Queries
-The full code is available here: [Full SQL script](sql_closing_stock_analysis)
+The full code is available here: [Full SQL script](sql_closing_stock_analysis.sql)
 5 unique Common Table Expressions (CTEs) were used. Their purposes are as follows:
 1. cter
  - This CTE calculates the returns from the closing stock price by obtaining the closing stock price and subtracting it from the closing stock price of the date prior. Note that unless your data provides daily measurements, the calculation will be based on the next available date e.g. days when the stock market is closed (i.e. holidays, etc.) will not be included with simulated or extrapolated data.
