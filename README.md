@@ -44,7 +44,7 @@ CREATE_TABLE stocks_data (
 2. Run the provided SQL file in psql or pgAdmin
 3. Obtain the outputs
 
-## REQUIREMENTS
+## Requirements
 This project was created (and thus uses and functions) using standard PostgreSQL with all features available in versions of POSTGRESQL 13 or later. Furhtermore, **psql** or a GUI such as **PGAdmin** is needed to run queries. Finally, a table named `stocks_data` with the provided schema is necessary.
 
 ## SQL Queries
@@ -60,4 +60,7 @@ This project was created (and thus uses and functions) using standard PostgreSQL
  - This CTE calculates the absolute deviation about the mean by using AVG(), ABS(), the returns, and the mean calculated in menmed. This figure is rounded to 5 places after the decimal.
 5. median_madcow
  - This CTE calculates the absolute deviation about the median by using PERCENTILE_CONT(), ABS(), the returns, and the median calculated in menmed. This figure is rounded to 5 places after the decimal.
+
+## Results
+![Uploading image.png…]()
 
