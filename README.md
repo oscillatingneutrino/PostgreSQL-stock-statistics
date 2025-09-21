@@ -10,12 +10,13 @@ Advanced PostgreSQL query using CTE's, window functions, and aggregate statistic
 - [Requirements](#Requirements)
 - [SQL  Queries](#SQL-Queries)
 - [Sample Results](#Sample-Results)
+- [Acknowledgments](#Acknowledgements)
 
 ## Overview
 This project calculates the returns from the closing stock price, and using these values uses aggregate functions and window functions to calculates the mean, trimmed mean, median, Absolute Deviation about the Mean, the Absolute Deviation about the Median, and the Standard Deviation. This project exists as a personal project to further understand statistical analysis.
 
 ## Dataset
-The source for this data is from [Kaggle - Massive Yahoo Finance Dataset](https://www.kaggle.com/datasets/iveeaten3223times/massive-yahoo-finance-dataset) 
+The source for this data is from [Kaggle - Massive Yahoo Finance Dataset](https://www.kaggle.com/datasets/iveeaten3223times/massive-yahoo-finance-dataset). Please download this data directly from Kaggle.
 
 This project uses data from a csv file containing the following 9 columns. Of the following, only the date, close, and company are used.
 - Columns: date, open, high, low, close, volume, dividend, stock splits, and company
@@ -66,3 +67,6 @@ The full code is available here: [Full SQL script](sql_closing_stock_analysis.sq
 
 ## Sample Results
 ![Sample Results](sample_results.png)
+
+## Acknowledgments
+I would first and foremost like to thank [Kaggle] for hosting the dataset that made this project possible.
